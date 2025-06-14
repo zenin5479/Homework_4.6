@@ -202,9 +202,9 @@ namespace Homework_4._6
       public static double FindMax(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
-         int column = 0;
          // Cчитаем, что максимум - это первый элемент строки
          double maxOut = inputArray[0];
+         int column = 0;
          while (column < inputArray.Length)
          {
             if (maxOut < inputArray[column])
