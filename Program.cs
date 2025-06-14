@@ -90,14 +90,6 @@ namespace Homework_4._6
          //string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
          //ClassFor1DArray.FileAppendString(arrayOne, pathFour);
 
-         //bool flagTwo = ClassFor1DArray.FindZero(searchTwo, nameTwo);
-         //if (flagTwo == false)
-         //{
-         //   double[] replacingTwo = ClassFor1DArray.ReplacingZero(searchTwo);
-         //   string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-         //   ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
-         //}
-
          Console.ReadKey();
       }
    }
