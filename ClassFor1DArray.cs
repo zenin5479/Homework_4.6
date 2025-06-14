@@ -128,7 +128,7 @@ namespace Homework_4._6
          Console.WriteLine();
          return outputArray;
       }
-      
+
       // Обновлен метод +
       public static double FindMax1DArray(double[] inputArray, string nameArray)
       {
@@ -159,18 +159,22 @@ namespace Homework_4._6
             // Сравниваем значения double используя метод CompareTo(Double) 
             if (inputArray[i].CompareTo(max) == 0)
             {
-               outputArray[i] = i;
+               outputArray[i] = inputArray[i];
             }
             else
             {
-               outputArray[i] = inputArray[i];
+               outputArray[i] = i;
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            //if (inputArray[i].Equals(max))
-            //{
-            //   inputArray[i] = i;
-            //}
+            if (inputArray[i].Equals(max))
+            {
+               outputArray[i] = inputArray[i];
+            }
+            else
+            {
+               outputArray[i] = i;
+            }
 
             i++;
          }
@@ -248,7 +252,7 @@ namespace Homework_4._6
          Console.WriteLine("Запись массива строк в файл");
          File.AppendAllLines(filePath, stringArray);
       }
-      
+
       public static int SearchingNull(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
