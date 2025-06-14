@@ -134,22 +134,20 @@ namespace Homework_4._6
       {
          // Поиск максимального элемента строки (без флагов bool)
          // Cчитаем, что максимум - это первый элемент строки
-         double maxOut = inputArray[0];
+         double max = inputArray[0];
          int column = 0;
          while (column < inputArray.Length)
          {
-            if (maxOut < inputArray[column])
+            if (max < inputArray[column])
             {
-               maxOut = inputArray[column];
+               max = inputArray[column];
             }
 
             column++;
          }
 
-         Console.WriteLine("Максимум в массиве {0} равен: {1:f2}", nameArray, maxOut);
-         //Console.Write("{0:f2} ", outputArray[i]);
-
-         return maxOut;
+         Console.WriteLine("Максимум в массиве {0} равен: {1:f2}", nameArray, max);
+         return max;
       }
 
       public static double[] ReplacingMax(double[] inputArray, double max)
