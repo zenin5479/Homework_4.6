@@ -162,10 +162,10 @@ namespace Homework_4._6
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            if (inputArray[i].Equals(max))
-            {
-               inputArray[i] = i;
-            }
+            //if (inputArray[i].Equals(max))
+            //{
+            //   inputArray[i] = i;
+            //}
 
             i++;
          }
