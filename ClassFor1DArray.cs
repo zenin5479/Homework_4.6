@@ -199,7 +199,7 @@ namespace Homework_4._6
          File.AppendAllLines(filePath, stringArray);
       }
 
-      public static double FindMax(double[] inputArray, string nameArray)
+      public static double FindMax1DArray(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
          // Cчитаем, что максимум - это первый элемент строки
