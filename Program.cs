@@ -27,8 +27,8 @@ namespace Homework_4._6
          string nameThree = "C";
 
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
+         //int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
+         //int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))

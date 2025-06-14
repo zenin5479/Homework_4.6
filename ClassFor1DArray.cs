@@ -146,7 +146,9 @@ namespace Homework_4._6
             column++;
          }
 
-         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, maxOut);
+         Console.WriteLine("Максимум в массиве {0} равен: {1:f2}", nameArray, maxOut);
+         //Console.Write("{0:f2} ", outputArray[i]);
+
          return maxOut;
       }
 
