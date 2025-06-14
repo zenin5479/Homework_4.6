@@ -110,6 +110,7 @@ namespace Homework_4._6
          return arrayDouble;
       }
 
+      // Обновлен метод +
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
@@ -118,14 +119,59 @@ namespace Homework_4._6
          while (i < n)
          {
             outputArray[i] = inputArray[i];
-            //Console.Write("{0:f2} ", outputArray[i]);
+            Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
-            Console.Write("{0} ", outputArray[i]);
+            //Console.Write("{0} ", outputArray[i]);
             i++;
          }
 
          Console.WriteLine();
          return outputArray;
+      }
+      
+      // Обновлен метод +
+      public static double FindMax1DArray(double[] inputArray, string nameArray)
+      {
+         // Поиск максимального элемента строки (без флагов bool)
+         // Cчитаем, что максимум - это первый элемент строки
+         double maxOut = inputArray[0];
+         int column = 0;
+         while (column < inputArray.Length)
+         {
+            if (maxOut < inputArray[column])
+            {
+               maxOut = inputArray[column];
+            }
+
+            column++;
+         }
+
+         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, maxOut);
+         return maxOut;
+      }
+
+      public static double[] ReplacingMax(double[] inputArray)
+      {
+         double numbercomparison = 0;
+         int i = 0;
+         while (i < inputArray.Length)
+         {
+            // Сравниваем значения double используя метод CompareTo(Double) 
+            if (inputArray[i].CompareTo(numbercomparison) < 0)
+            {
+               inputArray[i] = i;
+            }
+
+            // Сравниваем значения double используя оператор равенства ==
+            if (inputArray[i] < numbercomparison)
+            {
+               inputArray[i] = i;
+            }
+
+            i++;
+         }
+
+         return inputArray;
       }
 
       public static bool FindZero(double[] inputArray, string nameArray)
@@ -198,28 +244,7 @@ namespace Homework_4._6
          Console.WriteLine("Запись массива строк в файл");
          File.AppendAllLines(filePath, stringArray);
       }
-
-      public static double FindMax1DArray(double[] inputArray, string nameArray)
-      {
-         // Поиск максимального элемента строки (без флагов bool)
-         // Cчитаем, что максимум - это первый элемент строки
-         double maxOut = inputArray[0];
-         int column = 0;
-         while (column < inputArray.Length)
-         {
-            if (maxOut < inputArray[column])
-            {
-               maxOut = inputArray[column];
-            }
-
-            column++;
-         }
-
-         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, maxOut);
-         return maxOut;
-      }
-
-      // Обновлен метод +
+      
       public static int SearchingNull(double[] inputArray, string nameArray)
       {
          double numbercomparison = 0;
