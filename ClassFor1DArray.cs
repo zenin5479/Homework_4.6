@@ -199,27 +199,23 @@ namespace Homework_4._6
          File.AppendAllLines(filePath, stringArray);
       }
 
-      public static double[] FindMax(double[] inputArray)
+      public static double FindMax(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
          int columnOut = 0;
          // Cчитаем, что максимум - это первый элемент строки
          double maxOut = inputArray[0];
-         while (columnOut < inputArray.GetLength(1))
+         while (columnOut < inputArray.Length)
          {
-            if (maxOut < inputArray[rowOut, columnOut])
+            if (maxOut < inputArray[columnOut])
             {
-               maxOut = inputArray[rowOut, columnOut];
+               maxOut = inputArray[columnOut];
             }
 
             columnOut++;
          }
 
-         arrayMax[rowOut] = maxOut;
-         //Console.WriteLine("Максимум в строке {0} равен: {1}", rowOut, maxOut);
-         columnOut = 0;
-         rowOut++;
-
+         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, maxOut);
 
          Console.WriteLine("Массив максимальных значений строк");
          int indexMax = 0;
