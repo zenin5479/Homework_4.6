@@ -152,13 +152,18 @@ namespace Homework_4._6
 
       public static double[] ReplacingMax(double[] inputArray, double max)
       {
-        int i = 0;
+         double[] outputArray = new double[inputArray.Length];
+         int i = 0;
          while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
-            if (inputArray[i].CompareTo(max) < 0)
+            if (inputArray[i].CompareTo(max) == 0)
             {
-               inputArray[i] = i;
+               outputArray[i] = i;
+            }
+            else
+            {
+               outputArray[i] = inputArray[i];
             }
 
             // Сравниваем значения double используя метод Equals(Double)
@@ -170,7 +175,7 @@ namespace Homework_4._6
             i++;
          }
 
-         return inputArray;
+         return outputArray;
       }
 
       public static bool FindZero(double[] inputArray, string nameArray)
