@@ -150,19 +150,19 @@ namespace Homework_4._6
          return maxOut;
       }
 
-      public static double[] ReplacingMax(double[] inputArray, double maxOne)
+      public static double[] ReplacingMax(double[] inputArray, double max)
       {
         int i = 0;
          while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
-            if (inputArray[i].CompareTo(maxOne) < 0)
+            if (inputArray[i].CompareTo(max) < 0)
             {
                inputArray[i] = i;
             }
 
             // Сравниваем значения double используя метод Equals(Double)
-            if (inputArray[i].Equals(maxOne))
+            if (inputArray[i].Equals(max))
             {
                inputArray[i] = i;
             }
