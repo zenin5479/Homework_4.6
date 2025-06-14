@@ -550,7 +550,7 @@ namespace Homework_4._6
          return arrayMax;
       }
 
-      // Обновлен метод + 
+      // Обновлен метод + дописать для строки
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
