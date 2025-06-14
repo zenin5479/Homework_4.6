@@ -87,8 +87,8 @@ namespace Homework_4._6
                else
                {
                   string subLine = stringModified.ToString();
-                  //arrayDouble[сolumn] = Convert.ToDouble(subLine);
-                  double.TryParse(subLine, out arrayDouble[сolumn]);
+                  arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  //double.TryParse(subLine, out arrayDouble[сolumn]);
                   Console.Write(arrayDouble[сolumn] + " ");
                   stringModified.Clear();
                   сolumn++;
@@ -98,6 +98,7 @@ namespace Homework_4._6
                {
                   string subLine = stringModified.ToString();
                   arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  //double.TryParse(subLine, out arrayDouble[сolumn]);
                   Console.Write(arrayDouble[сolumn]);
                   stringModified.Clear();
                   сolumn++;
