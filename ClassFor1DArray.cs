@@ -120,7 +120,7 @@ namespace Homework_4._6
             outputArray[i] = inputArray[i];
             //Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
-            Console.Write("{0} ", outputArray[i]);
+            //Console.Write("{0} ", outputArray[i]);
             i++;
          }
 
@@ -219,7 +219,6 @@ namespace Homework_4._6
          Console.WriteLine();
          return maxOut;
       }
-
 
       // Обновлен метод +
       public static int SearchingNull(double[] inputArray, string nameArray)
