@@ -475,7 +475,8 @@ namespace Homework_4._6
          return outputArray;
       }
 
-      public static double[] FindMax(double[,] inputArray)
+      // Обновлен метод + 
+      public static double[] FindMax2DArray(double[,] inputArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
          double[] arrayMax = new double[inputArray.GetLength(0)];
