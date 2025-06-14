@@ -27,8 +27,8 @@ namespace Homework_4._6
          string nameThree = "C";
 
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameOne);
-         //int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
-         //int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
+         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
+         int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
@@ -78,17 +78,27 @@ namespace Homework_4._6
          }
 
          double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
-         //double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
-         //double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
 
          double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
-         //double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
-         //double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
+         double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
+         double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
 
          double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
          double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
          string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
          ClassFor1DArray.FileAppendString(arrayOne, pathFour);
+
+         double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
+         double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
+         string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
+         ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+
+         double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
+         double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
+         string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
+         ClassFor1DArray.FileAppendString(arrayThree, pathFour);
 
          Console.ReadKey();
       }
