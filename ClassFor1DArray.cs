@@ -87,7 +87,8 @@ namespace Homework_4._6
                else
                {
                   string subLine = stringModified.ToString();
-                  arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  //arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  double.TryParse(subLine, out arrayDouble[сolumn]);
                   Console.Write(arrayDouble[сolumn] + " ");
                   stringModified.Clear();
                   сolumn++;
@@ -119,9 +120,9 @@ namespace Homework_4._6
          while (i < n)
          {
             outputArray[i] = inputArray[i];
-            Console.Write("{0:f2} ", outputArray[i]);
+            //Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
-            //Console.Write("{0} ", outputArray[i]);
+            Console.Write("{0} ", outputArray[i]);
             i++;
          }
 
