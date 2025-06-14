@@ -202,31 +202,22 @@ namespace Homework_4._6
       public static double FindMax(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
-         int columnOut = 0;
+         int column = 0;
          // Cчитаем, что максимум - это первый элемент строки
          double maxOut = inputArray[0];
-         while (columnOut < inputArray.Length)
+         while (column < inputArray.Length)
          {
-            if (maxOut < inputArray[columnOut])
+            if (maxOut < inputArray[column])
             {
-               maxOut = inputArray[columnOut];
+               maxOut = inputArray[column];
             }
 
-            columnOut++;
+            column++;
          }
 
          Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, maxOut);
-
-         Console.WriteLine("Массив максимальных значений строк");
-         int indexMax = 0;
-         while (indexMax < arrayMax.Length)
-         {
-            Console.Write("{0} ", arrayMax[indexMax]);
-            indexMax++;
-         }
-
          Console.WriteLine();
-         return arrayMax;
+         return maxOut;
       }
 
 
