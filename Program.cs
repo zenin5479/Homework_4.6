@@ -85,7 +85,7 @@ namespace Homework_4._6
          double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
          double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
 
-         bool flagOne = ClassFor1DArray.FindZero(searchOne, nameOne);
+         bool flagOne = ClassFor1DArray.FindMax(searchOne, nameOne);
          if (flagOne == false)
          {
             double[] replacingOne = ClassFor1DArray.ReplacingZero(searchOne);
