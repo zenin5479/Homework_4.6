@@ -93,21 +93,21 @@ namespace Homework_4._6
             ClassFor1DArray.FileAppendString(arrayOne, pathFour);
          }
 
-         bool flagTwo = ClassFor1DArray.FindZero(searchTwo, nameTwo);
-         if (flagTwo == false)
-         {
-            double[] replacingTwo = ClassFor1DArray.ReplacingZero(searchTwo);
-            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
-         }
+         //bool flagTwo = ClassFor1DArray.FindZero(searchTwo, nameTwo);
+         //if (flagTwo == false)
+         //{
+         //   double[] replacingTwo = ClassFor1DArray.ReplacingZero(searchTwo);
+         //   string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
+         //   ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+         //}
 
-         bool flagThree = ClassFor1DArray.FindZero(searchThree, nameThree);
-         if (flagThree == false)
-         {
-            double[] replacingThree = ClassFor1DArray.ReplacingZero(searchThree);
-            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
-            ClassFor1DArray.FileAppendString(arrayThree, pathFour);
-         }
+         //bool flagThree = ClassFor1DArray.FindZero(searchThree, nameThree);
+         //if (flagThree == false)
+         //{
+         //   double[] replacingThree = ClassFor1DArray.ReplacingZero(searchThree);
+         //   string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
+         //   ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+         //}
 
          Console.ReadKey();
       }
