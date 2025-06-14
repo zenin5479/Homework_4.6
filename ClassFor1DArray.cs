@@ -225,16 +225,16 @@ namespace Homework_4._6
          while (i < inputArray.Length)
          {
             // Сравниваем значения double используя метод CompareTo(Double) 
-            //if (inputArray[i].CompareTo(numbercomparison) < 0)
-            //{
-            //   inputArray[i] = i;
-            //}
-
-            // Сравниваем значения double используя оператор равенства ==
-            if (inputArray[i] < numbercomparison)
+            if (inputArray[i].CompareTo(numbercomparison) < 0)
             {
                inputArray[i] = i;
             }
+
+            // Сравниваем значения double используя оператор равенства ==
+            //if (inputArray[i] < numbercomparison)
+            //{
+            //   inputArray[i] = i;
+            //}
 
             i++;
          }
