@@ -550,6 +550,36 @@ namespace Homework_4._6
          return arrayMax;
       }
 
+
+      // Обновлен метод +
+      public static string[] VivodStringArray(double[] inputArray)
+      {
+         // Объединение одномерного массива максимальных значений строк double[]
+         // в одномерный массив строк string[] для записи в файл (в одну строку массива)
+         Console.WriteLine("Одномерный массив строк");
+         StringBuilder stringModified = new StringBuilder();
+         int row = 0;
+         while (row < inputArray.Length)
+         {
+            if (row != inputArray.Length - 1)
+            {
+               stringModified.Append(inputArray[row] + " ");
+            }
+            else
+            {
+               stringModified.Append(inputArray[row]);
+            }
+
+            row++;
+         }
+
+         Console.WriteLine(stringModified);
+         string[] stringArray = { stringModified.ToString() };
+         return stringArray;
+      }
+
+
+
       // Обновлен метод + дописать для строки
       public static string[] VivodStringArray(double[] inputArray)
       {
