@@ -552,7 +552,7 @@ namespace Homework_4._6
 
 
       // Обновлен метод +
-      public static string VivodString(double[] inputArray)
+      public static string[] VivodString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
          // в одномерный массив строк string[] для записи в файл (в одну строку массива)
@@ -574,7 +574,7 @@ namespace Homework_4._6
          }
 
          Console.WriteLine(stringModified);
-         string stringArray = stringModified.ToString();
+         string[] stringArray = { stringModified.ToString() };
          return stringArray;
       }
 

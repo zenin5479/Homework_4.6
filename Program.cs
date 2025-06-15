@@ -87,7 +87,7 @@ namespace Homework_4._6
 
          double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
          double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
-         string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
+         string arrayOne = ClassFor1DArray.VivodString(replacingOne);
          ClassFor1DArray.FileAppendString(arrayOne, pathFour);
 
          //double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
