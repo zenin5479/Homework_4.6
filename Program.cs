@@ -90,15 +90,15 @@ namespace Homework_4._6
          string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
          ClassFor1DArray.FileAppendString(arrayOne, pathFour);
 
-         double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
-         double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
-         string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-         ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+         //double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
+         //double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
+         //string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
+         //ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
 
-         double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
-         double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
-         string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
-         ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+         //double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
+         //double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
+         //string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
+         //ClassFor1DArray.FileAppendString(arrayThree, pathFour);
 
          Console.ReadKey();
       }
