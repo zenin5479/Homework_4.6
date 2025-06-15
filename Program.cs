@@ -85,7 +85,9 @@ namespace Homework_4._6
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
 
          }
-         //
+
+         // https://aspdotnethelp.com/check-if-an-array-is-empty-in-csharp/
+         // https://s5.hpc.name/thread/o850/72302/obrabotka-isklyucheniya-pri-proverke-pustoy-stroki-v-c-na-windows-forms.html
 
          double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
          double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
