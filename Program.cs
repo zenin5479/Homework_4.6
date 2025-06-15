@@ -80,6 +80,12 @@ namespace Homework_4._6
          double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
          double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
          double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         if (sourceOne.Length < 1)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
+
+         }
+         //
 
          double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
          double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);

@@ -39,7 +39,6 @@ namespace Homework_4._6
          if (stroka == null)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
-            return arrayDouble;
          }
          else
          {
@@ -111,11 +110,11 @@ namespace Homework_4._6
             }
          }
 
-         Console.WriteLine();
+         //Console.WriteLine();
          return arrayDouble;
       }
 
-      // Обновлен метод +
+      // Обновлен метод + // Сделать остановку работы программы
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
