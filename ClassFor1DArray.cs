@@ -36,7 +36,7 @@ namespace Homework_4._6
          }
 
          streamReader.Close();
-         if (stroka == null)
+         if (stroka == null|| stroka.Length ==0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
          }
