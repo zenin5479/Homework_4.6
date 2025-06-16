@@ -22,6 +22,37 @@ namespace Homework_4._6
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
+         // Инициализация пустого массива
+         int[] numbers = new int[0];
+
+         // Проверьте, пуст ли массив, используя свойство Length
+         if (numbers.Length == 0)
+         {
+            Console.WriteLine("Массив пуст");
+         }
+         else
+         {
+            Console.WriteLine("Массив не является пустым");
+         }
+
+         // Объявите массив без инициализации
+         int[] numbers2 = null;
+
+         // Проверьте, является ли массив неинициализированным или пустым
+         if (numbers2 == null || numbers2.Length == 0)
+         {
+            Console.WriteLine("Массив либо неинициализирован, либо пуст");
+         }
+         else
+         {
+            Console.WriteLine("Массив не является пустым");
+         }
+
+         // Keep the console open until a key is pressed
+         Console.ReadKey();
+
+
+
          string nameOne = "A";
          string nameTwo = "B";
          string nameThree = "C";
