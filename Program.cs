@@ -39,7 +39,7 @@ namespace Homework_4._6
          int[] numbers2 = null;
 
          // Проверьте, является ли массив неинициализированным или пустым
-         if (numbers == null || numbers.Length == 0)
+         if (numbers2 == null || numbers2.Length == 0)
          {
             Console.WriteLine("Массив либо неинициализирован, либо пуст");
          }
@@ -114,7 +114,6 @@ namespace Homework_4._6
          if (sourceOne.Length < 1)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
-
          }
 
          double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
