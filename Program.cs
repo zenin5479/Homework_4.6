@@ -22,7 +22,7 @@ namespace Homework_4._6
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-        string nameOne = "A";
+         string nameOne = "A";
          string nameTwo = "B";
          string nameThree = "C";
 
