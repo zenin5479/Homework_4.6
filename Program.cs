@@ -39,7 +39,7 @@ namespace Homework_4._6
          int[] numbers2 = null;
 
          // Проверьте, является ли массив неинициализированным или пустым
-         if (numbers2 == null || numbers2.Length == 0)
+         if (numbers == null || numbers.Length == 0)
          {
             Console.WriteLine("Массив либо неинициализирован, либо пуст");
          }
