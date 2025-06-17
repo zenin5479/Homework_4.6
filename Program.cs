@@ -22,6 +22,23 @@ namespace Homework_4._6
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
+         // Declare an array without initialization
+         int[] numbers = new int[0];
+
+         // Check if the array is uninitialized or empty
+         if (numbers == null || numbers.Length == 0)
+         {
+            Console.WriteLine("The array is either uninitialized or empty.");
+         }
+         else
+         {
+            Console.WriteLine("The array is not empty.");
+         }
+
+         // Keep the console open until a key is pressed
+         Console.ReadKey();
+
+
          string nameOne = "A";
          string nameTwo = "B";
          string nameThree = "C";
