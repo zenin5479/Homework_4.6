@@ -26,7 +26,6 @@ namespace Homework_4._6
       public static double[] VvodArray(string path, string nameArray)
       {
          string stroka = null;
-         double[] arrayDouble = { };
          FileStream filestream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(filestream);
          while (streamReader.Peek() >= 0)
@@ -36,11 +35,9 @@ namespace Homework_4._6
          }
 
          streamReader.Close();
-
          //Console.WriteLine();
          Console.WriteLine("Исходный строковый массив {0}", nameArray);
          Console.WriteLine(stroka);
-
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          // Символ пробела
          char symbolSpace = ' ';
@@ -68,7 +65,7 @@ namespace Homework_4._6
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
          Console.WriteLine("Массив вещественных чисел {0}", nameArray);
          // Одномерный массив вещественных чисел
-         arrayDouble = new double[сolumn];
+         double[] arrayDouble = new double[сolumn];
          // Построитель строк
          StringBuilder stringModified = new StringBuilder();
          // Счетчик символов обнуляем
@@ -103,7 +100,6 @@ namespace Homework_4._6
 
             symbolСount++;
          }
-
 
          //Console.WriteLine();
          return arrayDouble;
