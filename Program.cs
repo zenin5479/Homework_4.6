@@ -84,7 +84,7 @@ namespace Homework_4._6
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
          }
-         
+
          double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
          double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
          double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
