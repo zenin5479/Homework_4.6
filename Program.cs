@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 
 // Даны три одномерных массива А, В и С разного размера, для каждого из которых сформировать новый массив
@@ -22,9 +21,6 @@ namespace Homework_4._6
       {
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-
-         
-
 
          string nameOne = "A";
          string nameTwo = "B";
@@ -84,29 +80,33 @@ namespace Homework_4._6
          double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
          double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
          double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
-         if (sourceOne.Length == 0)
+         if (sourceOne.Length == 0 || sourceTwo.Length == 0 || sourceThree.Length == 0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
          }
+         else
+         {
+            double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
+            double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
+            double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
 
-         double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
-         double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
-         double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
+            double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
+            double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
+            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
+            ClassFor1DArray.FileAppendString(arrayOne, pathFour);
 
-         double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
-         double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
-         string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
-         ClassFor1DArray.FileAppendString(arrayOne, pathFour);
+            double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
+            double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
+            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
+            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
 
-         double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
-         double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
-         string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-         ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+            double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
+            double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
+            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
+            ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+         }
 
-         double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
-         double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
-         string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
-         ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+
 
          Console.ReadKey();
       }
