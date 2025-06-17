@@ -106,8 +106,6 @@ namespace Homework_4._6
             ClassFor1DArray.FileAppendString(arrayThree, pathFour);
          }
 
-
-
          Console.ReadKey();
       }
    }
