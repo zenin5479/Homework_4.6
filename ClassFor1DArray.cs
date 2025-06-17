@@ -45,6 +45,7 @@ namespace Homework_4._6
          int symbolСount = 0;
          // Количество столбцов в строке
          int сolumn = 0;
+         // Ошибка
          while (symbolСount < stroka.Length)
          {
             if (symbolSpace == stroka[symbolСount])
