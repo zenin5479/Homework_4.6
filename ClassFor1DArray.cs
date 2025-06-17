@@ -46,29 +46,24 @@ namespace Homework_4._6
             }
 
             // Разделение строки на подстроки по пробелу для определения количества столбцов в строке
-            int[] sizeArray = new int[allLines.Length];
             char symbolSpace = ' ';
             int countSymbol = 0;
             int countСolumn = 0;
-            string line1 = allLines[countСolumn];
-            while (countSymbol < line1.Length)
+            while (countSymbol < allLines.Length)
             {
-               if (symbolSpace == line1[countSymbol])
+               if (symbolSpace == allLines[countSymbol])
                {
                   countСolumn++;
                }
 
-               if (countSymbol == line1.Length - 1)
+               if (countSymbol == allLines.Length - 1)
                {
                   countСolumn++;
                }
 
                countSymbol++;
             }
-
-            sizeArray[countСolumn] = countСolumn;
-            //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
-
+            Console.WriteLine("В строке количество столбцов {0}", countСolumn);
 
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
             Console.WriteLine("Исходный строковый массив {0}", nameArray);
