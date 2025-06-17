@@ -26,17 +26,13 @@ namespace Homework_4._6
       public static double[] VvodArray(string path, string nameArray)
       {
          string[] stroka = File.ReadAllLines(path);
-         if (stroka == null)
+         if (stroka.Length == 0)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
             Console.WriteLine("Исходный строковый массив пуст");
          }
          else
          {
-
-
-
-            //Console.WriteLine();
             Console.WriteLine("Исходный строковый массив {0}", nameArray);
             Console.WriteLine(stroka);
             // Определение количества столбцов в строке разделением строки на подстроки по пробелу
