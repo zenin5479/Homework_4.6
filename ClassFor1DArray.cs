@@ -23,7 +23,7 @@ namespace Homework_4._6
          return n;
       }
 
-      public static double[,] VvodArray(string path, string nameArray)
+      public static double[] VvodArray(string path, string nameArray)
       {
          //string[] stroka = File.ReadAllLines(path);
          //if (stroka.Length == 0)
@@ -104,13 +104,13 @@ namespace Homework_4._6
          //}
 
          // Двумерный массив вещественных чисел
-         double[,] arrayDouble = { };
+         double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
          if (allLines.Length == 0)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
-            Console.WriteLine("Исходный строковый массив пуст");
+            Console.WriteLine("Исходный строковый массив {0} пуст ", nameArray);
          }
          else
          {
