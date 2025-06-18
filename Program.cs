@@ -108,7 +108,7 @@ namespace Homework_4._6
          double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
          if (sourceThree.Length == 0)
          {
-            Console.WriteLine("Исходный строковый массив пуст");
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameThree);
          }
          else
          {
