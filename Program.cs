@@ -104,11 +104,7 @@ namespace Homework_4._6
             string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
             ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
          }
-
-
-
-
-
+         
          double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
          if (sourceOne.Length == 0 || sourceTwo.Length == 0 || sourceThree.Length == 0)
          {
