@@ -26,8 +26,7 @@ namespace Homework_4._6
       public static double[,] VvodArray(string path, string nameArray)
       {
          // Взять медод из двумерного массива!!!
-         //double[] arrayDouble = { };
-         //// Чтение файла за одну операцию
+         // Чтение файла за одну операцию
          //string[] stroka = File.ReadAllLines(path);
          //if (stroka.Length == 0)
          //{
