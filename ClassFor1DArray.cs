@@ -129,7 +129,7 @@ namespace Homework_4._6
          return arrayDouble;
       }
 
-      // Обновлен метод + // Сделать остановку работы программы
+      // Обновлен метод +
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
