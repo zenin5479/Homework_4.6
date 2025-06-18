@@ -29,7 +29,7 @@ namespace Homework_4._6
          double[,] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
-         if (allLines == null)
+         if (allLines == null || allLines.GetLength(0) == 0)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
             Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
