@@ -85,7 +85,7 @@ namespace Homework_4._6
          else
          {
             double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
-            double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
+            double maxOne = ClassFor1DArray.FindMaxArray(searchOne, nameOne);
             double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
             string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
             ClassFor1DArray.FileAppendString(arrayOne, pathFour);
@@ -99,7 +99,7 @@ namespace Homework_4._6
          else
          {
             double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
-            double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
+            double maxTwo = ClassFor1DArray.FindMaxArray(searchTwo, nameTwo);
             double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
             string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
             ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
@@ -113,7 +113,7 @@ namespace Homework_4._6
          else
          {
             double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
-            double maxThree = ClassFor1DArray.FindMax1DArray(searchThree, nameThree);
+            double maxThree = ClassFor1DArray.FindMaxArray(searchThree, nameThree);
             double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
             string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
             ClassFor1DArray.FileAppendString(arrayThree, pathFour);

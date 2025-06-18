@@ -136,7 +136,7 @@ namespace Homework_4._6
       }
 
       // Обновлен метод +
-      public static double FindMax1DArray(double[] inputArray, string nameArray)
+      public static double FindMaxArray(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
          // Cчитаем, что максимум - это первый элемент строки
