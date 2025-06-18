@@ -33,7 +33,7 @@ namespace Homework_4._6
          //   Console.WriteLine("Ошибка при открытии файла для чтения");
          //   Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
          //}
-         
+
          // Двумерный массив вещественных чисел
          double[,] arrayDouble = { };
          // Чтение файла за одну операцию
@@ -41,6 +41,7 @@ namespace Homework_4._6
          if (allLines == null)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
          }
          else
          {
