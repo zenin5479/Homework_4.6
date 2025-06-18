@@ -26,7 +26,7 @@ namespace Homework_4._6
       public static double[] VvodArray(string path, string nameArray)
       {
          string stroka = null;
-         double[] arrayDouble = {};
+         double[] arrayDouble = { };
          FileStream filestream = File.Open(path, FileMode.Open, FileAccess.Read);
          if (filestream == null || filestream.Length == 0)
          {
@@ -41,21 +41,19 @@ namespace Homework_4._6
                stroka = streamReader.ReadLine();
                //Console.WriteLine(stroka);
             }
-
-            streamReader.Close();
-            //Console.WriteLine();
-            Console.WriteLine("Исходный строковый массив {0}", nameArray);
-            Console.WriteLine(stroka);
-
-            // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-            // Символ пробела
-            char symbolSpace = ' ';
-            // Счетчик символов
-            int symbolСount = 0;
-            // Количество столбцов в строке
-            int сolumn = 0;
-            if (stroka != null)
+            if (stroka != null && stroka.Length == 0)
             {
+               Console.WriteLine("Исходный строковый массив {0}", nameArray);
+               Console.WriteLine(stroka);
+
+               // Определение количества столбцов в строке разделением строки на подстроки по пробелу
+               // Символ пробела
+               char symbolSpace = ' ';
+               // Счетчик символов
+               int symbolСount = 0;
+               // Количество столбцов в строке
+               int сolumn = 0;
+
                while (symbolСount < stroka.Length)
                {
                   if (symbolSpace == stroka[symbolСount])
@@ -72,20 +70,18 @@ namespace Homework_4._6
                }
 
                //Console.WriteLine("Количество столбцов {0}", сolumn);
-            }
 
-            // Разделение строки на подстроки по пробелу и конвертация подстрок в double
-            Console.WriteLine("Массив вещественных чисел {0}", nameArray);
-            // Одномерный массив вещественных чисел
-            arrayDouble = new double[сolumn];
-            // Построитель строк
-            StringBuilder stringModified = new StringBuilder();
-            // Счетчик символов обнуляем
-            symbolСount = 0;
-            // Количество столбцов в строке обнуляем
-            сolumn = 0;
-            if (stroka != null)
-            {
+
+               // Разделение строки на подстроки по пробелу и конвертация подстрок в double
+               Console.WriteLine("Массив вещественных чисел {0}", nameArray);
+               // Одномерный массив вещественных чисел
+               arrayDouble = new double[сolumn];
+               // Построитель строк
+               StringBuilder stringModified = new StringBuilder();
+               // Счетчик символов обнуляем
+               symbolСount = 0;
+               // Количество столбцов в строке обнуляем
+               сolumn = 0;
                while (symbolСount < stroka.Length)
                {
                   if (symbolSpace != stroka[symbolСount])
@@ -114,6 +110,7 @@ namespace Homework_4._6
                }
             }
 
+            streamReader.Close();
             Console.WriteLine();
          }
          return arrayDouble;
