@@ -111,7 +111,7 @@ namespace Homework_4._6
             }
 
             streamReader.Close();
-            Console.WriteLine();
+            //Console.WriteLine();
          }
          return arrayDouble;
       }
