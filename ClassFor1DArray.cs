@@ -40,18 +40,18 @@ namespace Homework_4._6
                stroka = streamReader.ReadLine();
                //Console.WriteLine(stroka);
             }
-            if (stroka != null && stroka.Length == 0)
+
+            // Определение количества столбцов в строке разделением строки на подстроки по пробелу
+            // Символ пробела
+            char symbolSpace = ' ';
+            // Счетчик символов
+            int symbolСount = 0;
+            // Количество столбцов в строке
+            int сolumn = 0;
+            if (stroka != null)
             {
                Console.WriteLine("Исходный строковый массив {0}", nameArray);
                Console.WriteLine(stroka);
-
-               // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-               // Символ пробела
-               char symbolSpace = ' ';
-               // Счетчик символов
-               int symbolСount = 0;
-               // Количество столбцов в строке
-               int сolumn = 0;
                while (symbolСount < stroka.Length)
                {
                   if (symbolSpace == stroka[symbolСount])
@@ -108,7 +108,7 @@ namespace Homework_4._6
             }
 
             streamReader.Close();
-            //Console.WriteLine();
+            Console.WriteLine();
          }
 
          return arrayDouble;
