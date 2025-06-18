@@ -25,15 +25,6 @@ namespace Homework_4._6
 
       public static double[,] VvodArray(string path, string nameArray)
       {
-         // Взять медод из двумерного массива!!!
-         // Чтение файла за одну операцию
-         //string[] stroka = File.ReadAllLines(path);
-         //if (stroka.Length == 0)
-         //{
-         //   Console.WriteLine("Ошибка при открытии файла для чтения");
-         //   Console.WriteLine("Исходный строковый массив {0} пуст", nameArray);
-         //}
-
          // Двумерный массив вещественных чисел
          double[,] arrayDouble = { };
          // Чтение файла за одну операцию
