@@ -53,7 +53,6 @@ namespace Homework_4._6
                int symbolСount = 0;
                // Количество столбцов в строке
                int сolumn = 0;
-
                while (symbolСount < stroka.Length)
                {
                   if (symbolSpace == stroka[symbolСount])
@@ -70,7 +69,6 @@ namespace Homework_4._6
                }
 
                //Console.WriteLine("Количество столбцов {0}", сolumn);
-
 
                // Разделение строки на подстроки по пробелу и конвертация подстрок в double
                Console.WriteLine("Массив вещественных чисел {0}", nameArray);
@@ -113,6 +111,7 @@ namespace Homework_4._6
             streamReader.Close();
             //Console.WriteLine();
          }
+
          return arrayDouble;
       }
 
