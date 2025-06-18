@@ -78,7 +78,37 @@ namespace Homework_4._6
          }
 
          double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
+         if (sourceOne.Length == 0)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
+         }
+         else
+         {
+            double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
+            double maxOne = ClassFor1DArray.FindMax1DArray(searchOne, nameOne);
+            double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
+            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
+            ClassFor1DArray.FileAppendString(arrayOne, pathFour);
+         }
+
          double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         if (sourceTwo.Length == 0)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameTwo);
+         }
+         else
+         {
+            double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
+            double maxTwo = ClassFor1DArray.FindMax1DArray(searchTwo, nameTwo);
+            double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
+            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
+            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+         }
+
+
+
+
+
          double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
          if (sourceOne.Length == 0 || sourceTwo.Length == 0 || sourceThree.Length == 0)
          {
