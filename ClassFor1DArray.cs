@@ -114,7 +114,6 @@ namespace Homework_4._6
          return arrayDouble;
       }
 
-      // Обновлен метод +
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
@@ -135,7 +134,6 @@ namespace Homework_4._6
          return outputArray;
       }
 
-      // Обновлен метод +
       public static double FindMaxArray(double[] inputArray, string nameArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
@@ -333,7 +331,6 @@ namespace Homework_4._6
          }
       }
 
-      // Обновлен метод + 
       public static void ComparisonNegative(int a, int b, int c)
       {
          string[] name = { "A", "B", "C" };
@@ -515,7 +512,6 @@ namespace Homework_4._6
          return outputArray;
       }
 
-      // Обновлен метод + 
       public static double[] FindMax2DArray(double[,] inputArray)
       {
          // Поиск максимального элемента строки (без флагов bool)
@@ -554,7 +550,6 @@ namespace Homework_4._6
          return arrayMax;
       }
 
-      // Обновлен метод +
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
@@ -589,7 +584,6 @@ namespace Homework_4._6
          File.WriteAllLines(filePath, stringArray);
       }
 
-      // Обновлен метод + 
       public static string[] VivodArrayString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
