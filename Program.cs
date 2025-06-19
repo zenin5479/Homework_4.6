@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryFor1DArray;
+using System;
 using System.IO;
 
 // Даны три одномерных массива А, В и С разного размера, для каждого из которых сформировать новый массив
@@ -26,9 +27,9 @@ namespace Homework_4._6
          string nameTwo = "B";
          string nameThree = "C";
 
-         int elementsOne = ClassFor1DArray.NumberArrayElements(nameOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameThree);
+         int elementsOne = VariousMethods.NumberArrayElements(nameOne);
+         int elementsTwo = VariousMethods.NumberArrayElements(nameTwo);
+         int elementsThree = VariousMethods.NumberArrayElements(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
@@ -77,46 +78,49 @@ namespace Homework_4._6
             //fileStream.Close();
          }
 
-         double[] sourceOne = ClassFor1DArray.VvodArray(pathOne, nameOne);
+         double[] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.Length == 0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
          }
          else
          {
-            double[] searchOne = ClassFor1DArray.InputArray(sourceOne, elementsOne, nameOne);
-            double maxOne = ClassFor1DArray.FindMaxArray(searchOne, nameOne);
-            double[] replacingOne = ClassFor1DArray.ReplacingMax(searchOne, maxOne);
-            string[] arrayOne = ClassFor1DArray.VivodStringArray(replacingOne);
-            ClassFor1DArray.FileAppendString(arrayOne, pathFour);
+            double[] searchOne = VariousMethods.InputArray(sourceOne, elementsOne, nameOne);
+            double maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
+            double[] replacingOne = VariousMethods.ReplacingMax(searchOne, maxOne);
+            string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
+            VariousMethods.FileAppendString(arrayOne, pathFour);
          }
 
-         double[] sourceTwo = ClassFor1DArray.VvodArray(pathTwo, nameTwo);
+         double[] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
          if (sourceTwo.Length == 0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameTwo);
          }
          else
          {
-            double[] searchTwo = ClassFor1DArray.InputArray(sourceTwo, elementsTwo, nameTwo);
-            double maxTwo = ClassFor1DArray.FindMaxArray(searchTwo, nameTwo);
-            double[] replacingTwo = ClassFor1DArray.ReplacingMax(searchTwo, maxTwo);
-            string[] arrayTwo = ClassFor1DArray.VivodStringArray(replacingTwo);
-            ClassFor1DArray.FileAppendString(arrayTwo, pathFour);
+               
+         }
+         {
+            double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
+            double maxTwo = VariousMethods.FindMaxArray(searchTwo, nameTwo);
+            double[] replacingTwo = VariousMethods.ReplacingMax(searchTwo, maxTwo);
+            string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
+            VariousMethods.FileAppendString(arrayTwo, pathFour);
          }
 
-         double[] sourceThree = ClassFor1DArray.VvodArray(pathThree, nameThree);
+         double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
          if (sourceThree.Length == 0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameThree);
          }
          else
          {
-            double[] searchThree = ClassFor1DArray.InputArray(sourceThree, elementsThree, nameThree);
-            double maxThree = ClassFor1DArray.FindMaxArray(searchThree, nameThree);
-            double[] replacingThree = ClassFor1DArray.ReplacingMax(searchThree, maxThree);
-            string[] arrayThree = ClassFor1DArray.VivodStringArray(replacingThree);
-            ClassFor1DArray.FileAppendString(arrayThree, pathFour);
+            double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
+            double maxThree = VariousMethods.FindMaxArray(searchThree, nameThree);
+            double[] replacingThree = VariousMethods.ReplacingMax(searchThree, maxThree);
+            string[] arrayThree = VariousMethods.VivodStringArray(replacingThree);
+            VariousMethods.FileAppendString(arrayThree, pathFour);
          }
 
          Console.ReadKey();
