@@ -99,14 +99,14 @@ namespace Homework_4._6
          }
          else
          {
-               
-         }
-         {
+
             double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
             double maxTwo = VariousMethods.FindMaxArray(searchTwo, nameTwo);
             double[] replacingTwo = VariousMethods.ReplacingMax(searchTwo, maxTwo);
             string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
             VariousMethods.FileAppendString(arrayTwo, pathFour);
+         }
+         {
          }
 
          double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
