@@ -106,8 +106,7 @@ namespace Homework_4._6
             string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
             VariousMethods.FileAppendString(arrayTwo, pathFour);
          }
-         {
-         }
+
 
          double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
          if (sourceThree.Length == 0)
